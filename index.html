@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .demo{
+         font-size: 14px;
+        }
+        .success{
+            border:5px solid #008000;
+        }
+        .fail{
+            border:5px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text" class="demo" value="" />
+
+    <input type="button" class="check" value="检测">
+</div>
+
+
+<script src="../jquery-1.9.1.min.js"></script>
+<script src="jquery.learnplugin.1.0.0.js"></script>
+<script>
+    $(function(){
+        $(".demo").learnPlugin({
+            on : "keyup",
+            success : function() {
+                $(this).addClass("success").removeClass("fail");
+            },
+            fail : function() {
+                $(this).addClass("fail").removeClass("success");
+            }
+        });
+    });
+</script>
+</body>
+</html>
