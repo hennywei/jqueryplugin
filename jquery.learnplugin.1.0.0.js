@@ -1,7 +1,5 @@
 ;(function( $ ){
-
-    //function learnPlugin = 
-
+    
     var defaults = {
         "errorMsg": "wrong email format",
         "successMsg": "correct email"
@@ -14,7 +12,7 @@
         this.on = this.config.on;
         this.success = this.config.success || (function(){});
         this.fail = this.config.fail || (function(){});
-        //this.input = this;
+
         this.init();
     };
 
