@@ -5,7 +5,7 @@
     <title></title>
     <style>
         .demo{
-         font-size: 14px;
+         font-size: 14px;float: left;
         }
         .success{
             border:5px solid #008000;
@@ -13,13 +13,17 @@
         .fail{
             border:5px solid #ff0000;
         }
+        .tips{
+            width:150px;float: left;margin-left: 20px;height: 30px;
+        }
+        .container{
+            left:left;top:10px;height: 50px;
+        }
     </style>
 </head>
 <body>
-<div>
-    <input type="text" class="demo" value="" />
-
-    <input type="button" class="check" value="检测">
+<div class="container">
+    <input type="text" class="demo" value="" /><span class="tips"></span>
 </div>
 
 
